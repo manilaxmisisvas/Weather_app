@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Application</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="weather-card">
+      <div class="search-container">
+        <input
+          type="text"
+          id="city"
+          class="cityname"
+          placeholder="Enter city name"
+        />
+        <button type="button" id="clear-btn" class="clear-btn">X</button>
+
+        <span class="material-icons icon" onclick="getWeather()">search</span>
+      </div>
+      <div id="weather-icon">
+        <img id="icon" src="" alt="" />
+      </div>
+      <div id="description"></div>
+      <div class="info">
+        <div id="humidity">
+          <i class="material-icons">opacity</i>
+          <span id="humidity">Humidity : </span>
+        </div>
+        <div id="temp">
+          <i class="material-icons">thermostat</i>
+          <span id="temperature">Temp : </span>
+        </div>
+        <div id="wind">
+          <i class="material-icons">air</i>
+          <span id="wind-speed">Wind : </span>
+        </div>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
+<!-- internet connection is needed to get the information -->
